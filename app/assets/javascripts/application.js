@@ -12,5 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+//= require bootstrap.min
+//= require owl.carousel.min
+//= require jquery.countTo
+//= require jquery.appear
+//= require isotope.pkgd.min
+//= require jquery.localScroll.min
+//= require jquery.scrollTo.min
+//= require jquery.flexslider-min
+//= require jquery.simple-text-rotator.min
+//= require jquery.easing.min
+//= require imagesloaded.pkgd.min
+//= require jquery.fitvids
+//= require wow.min
+//= require gmap3.min
+//= require scripts
