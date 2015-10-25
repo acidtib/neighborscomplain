@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: releases
+#
+#  id         :integer          not null, primary key
+#  artist_id  :integer
+#  catalog    :string
+#  name       :string
+#  price      :decimal(, )
+#  about      :text
+#  credits    :text
+#  cover      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist_id: 1
+  catalog: MyString
+  name: MyString
+  price: 9.99
+  about: MyText
+  credits: MyText
+  cover: MyString
+
+two:
+  artist_id: 1
+  catalog: MyString
+  name: MyString
+  price: 9.99
+  about: MyText
+  credits: MyText
+  cover: MyString
