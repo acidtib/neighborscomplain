@@ -1,0 +1,40 @@
+<div class="main-wrapper pt-100 oh">
+
+  <!-- Page Title -->
+  <section class="page-title style-2">
+  	<div class="container relative clearfix">
+  		<div class="title-holder">
+  			<div class="title-text text-center">
+  				<h1>Artists</h1>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!-- end page title -->
+
+  <!-- Artists -->
+  <% @artists.each do |artist| %>
+    <section class="section-wrap works-grid-3-col-wide pb-0 artist">
+    	<div class="container-fluid">
+    		<div class="grid-3-col grid-wide grid-gutter">
+
+    			<div class="work-item web-design print">
+            <%= link_to artist do %>
+              <div class="work-img">
+    					  <img src="app/assets/img/artist/hackers-dilemma.jpg" alt="Hackers Dilemma">
+    				  </div>
+            <% end %>
+
+            <div style="margin-top: 8px;">
+              <h3>
+                <%= artist.name %>
+              </h3>
+            </div>
+    			</div>
+
+    		</div>
+    	</div>
+    </section>
+  <% end %>
+
+</div>

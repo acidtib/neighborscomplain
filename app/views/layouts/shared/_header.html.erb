@@ -11,8 +11,12 @@
   <div class="fs-menu" id="overlay">
     <nav class="overlay-menu">
       <ul>
-        <li class="active"><a href="/">Home</a></li>
-        <li class=""><a href="/artists">Artists</a></li>
+        <li class="active">
+          <%= link_to "Home", root_url %>
+        </li>
+        <li class="">
+          <%= link_to "Artists", artists_path %>
+        </li>
         <li class=""><a href="/releases">Releases</a></li>
         <li class=""><a href="/contact">Contact</a></li>
       </ul>
