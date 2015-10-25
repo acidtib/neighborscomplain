@@ -1,19 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="main-wrapper pt-100 oh">
 
-<p>
-  <strong>Name:</strong>
-  <%= @artist.name %>
-</p>
+  <!-- Page Title -->
+  <section class="page-title style-2">
+  	<div class="container relative clearfix">
+  		<div class="title-holder">
+  			<div class="title-text text-center">
+  				<h1>
+            <%= @artist.name %>
+          </h1>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!-- end page title -->
 
-<p>
-  <strong>Bio:</strong>
-  <%= @artist.bio %>
-</p>
+  <section class="section-wrap">
+    <div class="container">
 
-<p>
-  <strong>Image:</strong>
-  <%= @artist.image %>
-</p>
+      <div class="row">
+        <div class="col-md-8">
+          <%= image_tag @artist.image_url, style: "border: 2px solid #f7f7f7;" %>
+        </div>
 
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
+        <div class="col-md-4">
+          <p>
+            <%= raw @artist.bio %>
+          </p>
+
+          <div class="artist-action">
+            <%= link_to "Soundcloud", "http://soundcloud.com/#{@artist.soundcloud}", class: "btn btn-lg btn-color btn-submit" %>
+            <a href="<%= @artist.image_url %>" class="btn btn-lg btn-color btn-submit" download="<%= @artist.image.file.filename.gsub("image-", "") %>">Photo Download</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>

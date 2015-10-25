@@ -8,6 +8,7 @@
 #  image      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  soundcloud :string
 #
 
 class Artist < ActiveRecord::Base
