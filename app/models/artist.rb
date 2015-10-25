@@ -14,4 +14,5 @@
 class Artist < ActiveRecord::Base
   mount_uploader :image, AvatarUploader
   has_many :releases
+  has_many :tracks, through: :releases
 end
