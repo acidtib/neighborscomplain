@@ -5,7 +5,7 @@
   	<div class="container relative clearfix">
   		<div class="title-holder">
   			<div class="title-text text-center">
-  				<h1>Artists</h1>
+  				<h1>Artist's</h1>
   			</div>
   		</div>
   	</div>
@@ -13,15 +13,15 @@
   <!-- end page title -->
 
   <!-- Artists -->
-  <% @artists.each do |artist| %>
-    <section class="section-wrap works-grid-3-col-wide pb-0 artist">
-    	<div class="container-fluid">
+  <section class="section-wrap works-grid-3-col-wide pb-0 artist">
+    <div class="container-fluid">
+      <% @artists.each do |artist| %>
     		<div class="grid-3-col grid-wide grid-gutter">
 
     			<div class="work-item web-design print">
             <%= link_to artist do %>
               <div class="work-img">
-    					  <img src="app/assets/img/artist/hackers-dilemma.jpg" alt="Hackers Dilemma">
+                <%= image_tag artist.image_url, alt: artist.name %>
     				  </div>
             <% end %>
 
@@ -33,8 +33,7 @@
     			</div>
 
     		</div>
-    	</div>
-    </section>
-  <% end %>
-
+      <% end %>
+    </div>
+  </section>
 </div>
